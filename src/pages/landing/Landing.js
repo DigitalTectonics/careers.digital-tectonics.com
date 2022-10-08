@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Typography } from "@mui/material";
+import { Avatar, Box, Typography } from "@mui/material";
 import {
   AiFillAndroid,
   AiOutlineMobile,
@@ -98,7 +98,7 @@ export default function Landing() {
           </svg>
         </Box>
       </Box>
-      <Box
+      <Avatar
         sx={{
           position: "absolute",
           bottom: { xs: "5rem", sm: "10rem", md: "25px" },
@@ -115,7 +115,7 @@ export default function Landing() {
         <Box sx={{ display: { xs: "block", md: "none" } }}>
           <AiOutlineDown color="white" size="20px" />
         </Box>
-      </Box>
+      </Avatar>
     </Box>
   );
 }
