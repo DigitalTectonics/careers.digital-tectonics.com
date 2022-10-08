@@ -11,10 +11,8 @@ import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
 import { Avatar } from "@mui/material";
 import logo from "../assets/logo.png";
-import { Link } from "react-router-dom";
 
 const pages = ["Home", "Our Services", "About Us", "Contact Us"];
-const routes = ["home", "services", "about", "contact"];
 
 export default function Appbar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -94,12 +92,7 @@ export default function Appbar() {
               }}
             >
               {pages.map((page, index) => (
-                <MenuItem
-                  component={Link}
-                  to={`/${routes[index]}`}
-                  key={page}
-                  onClick={handleCloseNavMenu}
-                >
+                <MenuItem key={page} onClick={handleCloseNavMenu}>
                   <Typography textAlign="center">{page}</Typography>
                 </MenuItem>
               ))}
@@ -141,8 +134,6 @@ export default function Appbar() {
                 key={page}
                 onClick={handleCloseNavMenu}
                 sx={{ my: 2, color: "white", display: "block", ml: 3 }}
-                component={Link}
-                to={`/${routes[index]}`}
               >
                 <Typography textAlign="center">{page}</Typography>
               </Button>

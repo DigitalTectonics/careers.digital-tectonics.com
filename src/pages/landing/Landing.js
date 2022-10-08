@@ -1,27 +1,81 @@
 import React from "react";
 import { Box, Typography } from "@mui/material";
+import {
+  AiFillAndroid,
+  AiOutlineMobile,
+  AiOutlineAreaChart,
+  AiOutlineDown,
+} from "react-icons/ai";
 
 export default function Landing() {
   return (
-    <Box sx={{ height: "100vh", position: "relative", width: "100vw" }}>
+    <Box
+      sx={{
+        height: "100vh",
+        position: "relative",
+        display: "flex",
+        justifyContent: "center",
+        borderLeft: "10px solid #61ca81",
+        borderRight: "10px solid #61ca81",
+      }}
+    >
       <Box
         sx={{
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
-          width: "100vw",
-          height: "40vh",
+          flexDirection: "column",
+          width: { xs: "90vw", md: "60vw" },
+          height: "70vh",
           textAlign: "center",
+          marginTop: "50px",
         }}
       >
-        <Typography alignText="center" fontWeight="700" fontSize="3em">
+        <Typography
+          alignText="center"
+          fontWeight="700"
+          sx={{ fontSize: { xs: "2em", sm: "3em", md: "3em" } }}
+        >
           Smart, Secure, Scalable Solutions.
         </Typography>
-        <Typography alignText="center" fontWeight="700" fontSize="3em">
+        <Typography
+          alignText="center"
+          fontWeight="400"
+          sx={{ fontSize: { xs: "25px", sm: "2em", md: "3em" } }}
+        >
           We design and develop mobile apps that delight your users and grow
           your business. Enterprise-grade development combined with outstanding
           design.
         </Typography>
+        <Box sx={{ display: "flex", gap: "15px", mt: "20px" }}>
+          <Box
+            sx={{
+              borderRadius: "100%",
+              backgroundColor: "#61ca81",
+              padding: "30px",
+            }}
+          >
+            <AiFillAndroid size="2rem" color="white" />
+          </Box>
+          <Box
+            sx={{
+              borderRadius: "100%",
+              backgroundColor: "#61ca81",
+              padding: "30px",
+            }}
+          >
+            <AiOutlineMobile size="2rem" color="white" />
+          </Box>
+          <Box
+            sx={{
+              borderRadius: "100%",
+              backgroundColor: "#61ca81",
+              padding: "30px",
+            }}
+          >
+            <AiOutlineAreaChart size="2rem" color="white" />
+          </Box>
+        </Box>
       </Box>
       <Box
         sx={{
@@ -43,7 +97,24 @@ export default function Landing() {
             ></path>
           </svg>
         </Box>
-        <Box sx={{ background: "#61CA81", height: "1vh" }}></Box>
+      </Box>
+      <Box
+        sx={{
+          position: "absolute",
+          bottom: { xs: "5rem", sm: "10rem", md: "25px" },
+          zIndex: "10",
+          background: { xs: "#61ca81", md: "white" },
+          borderRadius: "100%",
+          padding: { xs: "5px", md: "15px" },
+          border: "3px solid #2d8046",
+        }}
+      >
+        <Box sx={{ display: { xs: "none", md: "block" } }}>
+          <AiOutlineDown color="#61ca81" size="20px" />
+        </Box>
+        <Box sx={{ display: { xs: "block", md: "none" } }}>
+          <AiOutlineDown color="white" size="20px" />
+        </Box>
       </Box>
     </Box>
   );

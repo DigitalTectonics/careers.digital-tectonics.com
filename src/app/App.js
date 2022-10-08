@@ -1,20 +1,16 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Landing from "../pages/landing/Landing";
+import About from "../pages/services/About";
 import Appbar from "../components/Appbar";
 import { theme } from "./theme";
 import { ThemeProvider } from "@emotion/react";
 
 function App() {
   return (
-    <BrowserRouter>
-      <ThemeProvider theme={theme}>
-        <Appbar />
-        <Routes>
-          <Route path="/" element={<Landing />} />
-          <Route path="/home" element={<Landing />} />
-        </Routes>
-      </ThemeProvider>
-    </BrowserRouter>
+    <ThemeProvider theme={theme}>
+      <Appbar />
+      <Landing />
+      <About />
+    </ThemeProvider>
   );
 }
 
