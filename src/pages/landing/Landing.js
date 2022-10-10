@@ -1,15 +1,12 @@
 import React from "react";
 import { Avatar, Box, Typography } from "@mui/material";
-import {
-  AiFillAndroid,
-  AiOutlineMobile,
-  AiOutlineAreaChart,
-  AiOutlineDown,
-} from "react-icons/ai";
+import { AiFillAndroid, AiFillApple, AiOutlineDown } from "react-icons/ai";
+import { TbWorld } from "react-icons/tb";
 
 export default function Landing() {
   return (
     <Box
+      id="landing"
       sx={{
         height: "100vh",
         position: "relative",
@@ -34,14 +31,14 @@ export default function Landing() {
         <Typography
           alignText="center"
           fontWeight="700"
-          sx={{ fontSize: { xs: "2em", sm: "3em", md: "3em" } }}
+          sx={{ fontSize: { xs: "2em", sm: "2em", md: "3em", lg: "3em" } }}
         >
           Smart, Secure, Scalable Solutions.
         </Typography>
         <Typography
           alignText="center"
           fontWeight="400"
-          sx={{ fontSize: { xs: "25px", sm: "2em", md: "3em" } }}
+          sx={{ fontSize: { xs: "25px", sm: "2em", md: "2em", lg: "3em" } }}
         >
           We design and develop mobile apps that delight your users and grow
           your business. Enterprise-grade development combined with outstanding
@@ -64,7 +61,7 @@ export default function Landing() {
               padding: "30px",
             }}
           >
-            <AiOutlineMobile size="2rem" color="white" />
+            <AiFillApple size="2rem" color="white" />
           </Box>
           <Box
             sx={{
@@ -73,7 +70,7 @@ export default function Landing() {
               padding: "30px",
             }}
           >
-            <AiOutlineAreaChart size="2rem" color="white" />
+            <TbWorld size="2rem" color="white" />
           </Box>
         </Box>
       </Box>
@@ -101,11 +98,11 @@ export default function Landing() {
       <Avatar
         sx={{
           position: "absolute",
-          bottom: { xs: "5rem", sm: "10rem", md: "25px" },
+          bottom: { xs: "5rem", sm: "10rem", md: "15px", lg: "25px" },
           zIndex: "10",
           background: { xs: "#61ca81", md: "white" },
           borderRadius: "100%",
-          padding: { xs: "5px", md: "15px" },
+          padding: { xs: "5px", md: "10px", lg: "15px" },
           border: "3px solid #2d8046",
         }}
       >

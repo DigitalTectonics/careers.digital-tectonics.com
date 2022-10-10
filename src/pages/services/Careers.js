@@ -9,18 +9,20 @@ import {
 } from "@mui/material";
 import { AiOutlineMobile } from "react-icons/ai";
 
-export default function About() {
+export default function Careers() {
   return (
     <Box
+      id="careers"
       sx={{
-        height: { xs: "auto", md: "100vh" },
+        height: { xs: "auto", md: "auto", lg: "100vh" },
+        pb: "100px",
         width: "100vw",
         backgroundColor: "#61ca81",
         display: "flex",
         flexDirection: "column",
       }}
     >
-      <Box sx={{ width: "100%", mt: "100px" }}>
+      <Box sx={{ width: "100%", mt: "80px" }}>
         <Typography
           sx={{
             textDecoration: "underline",
