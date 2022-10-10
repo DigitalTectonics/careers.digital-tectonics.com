@@ -14,6 +14,7 @@ export default function Careers() {
     <Box
       id="careers"
       sx={{
+        mt: "-10px",
         pb: "100px",
         width: "100vw",
         backgroundColor: "#61ca81",

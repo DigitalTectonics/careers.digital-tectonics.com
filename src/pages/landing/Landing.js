@@ -77,7 +77,7 @@ export default function Landing() {
       <Box
         sx={{
           position: "absolute",
-          bottom: "0px",
+          bottom: "calc(10px + (100vh - 100%))",
           zIndex: "10",
         }}
       >
