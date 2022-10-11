@@ -10,7 +10,47 @@ import {
   BsLinkedin,
 } from "react-icons/bs";
 
+import { AiOutlineLink } from "react-icons/ai";
+
 export default function Footer() {
+  function fallbackCopyTextToClipboard(text) {
+    var textArea = document.createElement("textarea");
+    textArea.value = text;
+
+    // Avoid scrolling to bottom
+    textArea.style.top = "0";
+    textArea.style.left = "0";
+    textArea.style.position = "fixed";
+
+    document.body.appendChild(textArea);
+    textArea.focus();
+    textArea.select();
+
+    try {
+      var successful = document.execCommand("copy");
+      var msg = successful ? "successful" : "unsuccessful";
+      console.log("Fallback: Copying text command was " + msg);
+    } catch (err) {
+      console.error("Fallback: Oops, unable to copy", err);
+    }
+
+    document.body.removeChild(textArea);
+  }
+
+  const copyToClipboard = (text) => {
+    if (!navigator.clipboard) {
+      fallbackCopyTextToClipboard(text);
+      return;
+    }
+    navigator.clipboard.writeText(text).then(
+      function () {
+        console.log("Async: Copying to clipboard was successful!");
+      },
+      function (err) {
+        console.error("Async: Could not copy text: ", err);
+      }
+    );
+  };
   return (
     <footer style={{ borderTop: "10px solid #2d8046" }}>
       <div className="container">
@@ -19,9 +59,9 @@ export default function Footer() {
             <div className="footer-logo">
               <a
                 style={{ textDecoration: "none" }}
-                rel="noopener noreferrere"
+                rel="noopener noreferrer"
                 target="_blank"
-                href="https://digital-tectonics.com/index.php"
+                href="https://digital-tectonics.com"
               >
                 <img src={logo} alt="logo" />
                 <span>Digital Technotics</span>
@@ -33,23 +73,26 @@ export default function Footer() {
                     <a
                       id="contact_email"
                       href="mailto:info@digital-tectonics.com"
+                      rel="noopener noreferrer"
                     >
                       info@digital-tectonics.com
                     </a>
                     <div className="link-to-clipboard">
-                      <i
+                      <AiOutlineLink
                         className="fa fa-link"
-                        onclick="copyToClipboard(\'info@digital-tectonics.com\')"
-                      ></i>
+                        onClick={() =>
+                          copyToClipboard("info@digital-tectonics.com")
+                        }
+                      />
                     </div>
                   </div>
                   <div className="link-container">
                     <a href="tel:7046591429">(704) 659-1429</a>
                     <div className="link-to-clipboard">
-                      <i
+                      <AiOutlineLink
                         className="fa fa-link"
-                        onclick="copyToClipboard(\'7046591429\')"
-                      ></i>
+                        onClick={() => copyToClipboard("7046591429")}
+                      />
                     </div>
                   </div>
                 </li>

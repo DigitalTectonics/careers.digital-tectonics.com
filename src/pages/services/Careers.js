@@ -32,6 +32,7 @@ export default function Careers() {
           color="white"
           fontWeight="700"
           textAlign="center"
+          fontFamily="poppins"
         >
           Services
         </Typography>
@@ -51,8 +52,14 @@ export default function Careers() {
               component={AiOutlineMobile}
             />
             <CardContent>
-              <Typography textAlign="center">App Aid</Typography>
-              <Typography textAlign="center">
+              <Typography
+                fontWeight="700"
+                fontFamily='"Mulish", sans-serif'
+                textAlign="center"
+              >
+                App Aid
+              </Typography>
+              <Typography fontFamily='"Mulish", sans-serif' textAlign="center">
                 Whether you're a seasoned developer or gearing up to submit your
                 first app, everyone can use a second review and prevent a
                 rejection.
@@ -68,8 +75,14 @@ export default function Careers() {
               component={AiOutlineMobile}
             />
             <CardContent>
-              <Typography textAlign="center">App Aid</Typography>
-              <Typography textAlign="center">
+              <Typography
+                fontWeight="700"
+                fontFamily='"Mulish", sans-serif'
+                textAlign="center"
+              >
+                App Aid
+              </Typography>
+              <Typography fontFamily='"Mulish", sans-serif' textAlign="center">
                 Whether you're a seasoned developer or gearing up to submit your
                 first app, everyone can use a second review and prevent a
                 rejection.
@@ -85,8 +98,14 @@ export default function Careers() {
               component={AiOutlineMobile}
             />
             <CardContent>
-              <Typography textAlign="center">App Aid</Typography>
-              <Typography textAlign="center">
+              <Typography
+                fontWeight="700"
+                fontFamily='"Mulish", sans-serif'
+                textAlign="center"
+              >
+                App Aid
+              </Typography>
+              <Typography fontFamily='"Mulish", sans-serif' textAlign="center">
                 Whether you're a seasoned developer or gearing up to submit your
                 first app, everyone can use a second review and prevent a
                 rejection.
@@ -105,6 +124,7 @@ export default function Careers() {
           color="white"
           fontWeight="700"
           textAlign="center"
+          fontFamily="poppins"
         >
           Operations
         </Typography>
@@ -123,8 +143,17 @@ export default function Careers() {
                 component={AiOutlineMobile}
               />
               <CardContent>
-                <Typography textAlign="center">App Aid</Typography>
-                <Typography textAlign="center">
+                <Typography
+                  fontWeight="700"
+                  fontFamily='"Mulish", sans-serif'
+                  textAlign="center"
+                >
+                  App Aid
+                </Typography>
+                <Typography
+                  fontFamily='"Mulish", sans-serif'
+                  textAlign="center"
+                >
                   Whether you're a seasoned developer or gearing up to submit
                   your first app, everyone can use a second review and prevent a
                   rejection.
@@ -140,8 +169,17 @@ export default function Careers() {
                 component={AiOutlineMobile}
               />
               <CardContent>
-                <Typography textAlign="center">App Aid</Typography>
-                <Typography textAlign="center">
+                <Typography
+                  fontWeight="700"
+                  fontFamily='"Mulish", sans-serif'
+                  textAlign="center"
+                >
+                  App Aid
+                </Typography>
+                <Typography
+                  fontFamily='"Mulish", sans-serif'
+                  textAlign="center"
+                >
                   Whether you're a seasoned developer or gearing up to submit
                   your first app, everyone can use a second review and prevent a
                   rejection.
@@ -157,8 +195,17 @@ export default function Careers() {
                 component={AiOutlineMobile}
               />
               <CardContent>
-                <Typography textAlign="center">App Aid</Typography>
-                <Typography textAlign="center">
+                <Typography
+                  fontWeight="700"
+                  fontFamily='"Mulish", sans-serif'
+                  textAlign="center"
+                >
+                  App Aid
+                </Typography>
+                <Typography
+                  fontFamily='"Mulish", sans-serif'
+                  textAlign="center"
+                >
                   Whether you're a seasoned developer or gearing up to submit
                   your first app, everyone can use a second review and prevent a
                   rejection.

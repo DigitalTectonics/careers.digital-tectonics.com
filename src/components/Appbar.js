@@ -13,12 +13,7 @@ import { Avatar } from "@mui/material";
 import logo from "../assets/logo.png";
 
 const pages = ["Home", "Careers", "About Us", "Contact Us"];
-const links = [
-  "https://digital-tectonics.com/index.php",
-  "careers",
-  "about",
-  "contact",
-];
+const links = ["https://digital-tectonics.com", "careers", "about", "contact"];
 
 export default function Appbar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -54,7 +49,7 @@ export default function Appbar() {
             sx={{
               mr: 2,
               display: { xs: "none", md: "flex" },
-              fontFamily: "monospace",
+              fontFamily: "Mulish",
               fontWeight: 700,
               letterSpacing: ".3rem",
               color: "white",
@@ -105,7 +100,9 @@ export default function Appbar() {
                   key={page}
                   onClick={handleCloseNavMenu}
                 >
-                  <Typography textAlign="center">{page}</Typography>
+                  <Typography fontFamily="poppins" textAlign="center">
+                    {page}
+                  </Typography>
                 </MenuItem>
               ))}
             </Menu>
@@ -150,7 +147,9 @@ export default function Appbar() {
                 target={index === 0 ? "_blank" : null}
                 href={index === 0 ? `${links[index]}` : `#${links[index]}`}
               >
-                <Typography textAlign="center">{page}</Typography>
+                <Typography fontFamily="poppins" textAlign="center">
+                  {page}
+                </Typography>
               </Button>
             ))}
           </Box>

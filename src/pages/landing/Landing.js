@@ -8,7 +8,7 @@ export default function Landing() {
     <Box
       id="landing"
       sx={{
-        height: "100vh",
+        minHeight: "100vh",
         position: "relative",
         display: "flex",
         justifyContent: "center",
@@ -31,6 +31,7 @@ export default function Landing() {
         <Typography
           alignText="center"
           fontWeight="700"
+          fontFamily='"DM Sans", sans-serif'
           sx={{ fontSize: { xs: "2em", sm: "2em", md: "3em", lg: "3em" } }}
         >
           Smart, Secure, Scalable Solutions.
@@ -38,6 +39,7 @@ export default function Landing() {
         <Typography
           alignText="center"
           fontWeight="400"
+          fontFamily='"Ubuntu", sans-serif'
           sx={{ fontSize: { xs: "25px", sm: "2em", md: "2em", lg: "3em" } }}
         >
           We design and develop mobile apps that delight your users and grow
