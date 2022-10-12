@@ -15,7 +15,7 @@ export default function Careers() {
       id="careers"
       sx={{
         mt: "-10px",
-        pb: "100px",
+        pb: { xs: "100px", md: "150px", lg: "0px" },
         width: "100vw",
         backgroundColor: "#61ca81",
         display: "flex",
