@@ -42,7 +42,6 @@ export default function Contact() {
             textDecoration: "underline",
             fontSize: { xs: "2em", sm: "3em", md: "3em" },
             zIndex: "100",
-            mb: "50px",
           }}
           letterSpacing="0.1rem"
           color="white"
