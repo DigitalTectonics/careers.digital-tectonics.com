@@ -1,13 +1,5 @@
 import React from "react";
-import {
-  Box,
-  Typography,
-  Card,
-  CardContent,
-  CardMedia,
-  Grid,
-} from "@mui/material";
-import { AiOutlineMobile } from "react-icons/ai";
+import { Box, Typography, Button, Grid, Paper } from "@mui/material";
 
 export default function Careers() {
   return (
@@ -15,203 +7,172 @@ export default function Careers() {
       id="careers"
       sx={{
         mt: "-10px",
-        pb: { xs: "100px", md: "150px", lg: "0px" },
+        pb: { xs: "160px", md: "150px", lg: "100px" },
         width: "100vw",
         backgroundColor: "#61ca81",
         display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
         flexDirection: "column",
       }}
     >
-      <Box sx={{ width: "100%", mt: "80px" }}>
-        <Typography
-          sx={{
-            textDecoration: "underline",
-            fontSize: { xs: "2em", sm: "3em", md: "3em" },
-          }}
-          letterSpacing="0.1rem"
-          color="white"
-          fontWeight="700"
-          textAlign="center"
-          fontFamily="poppins"
-        >
-          Services
-        </Typography>
-      </Box>
-      <Grid
-        container
-        justifyContent="center"
-        alignItems="center"
-        spacing="20px"
-        pt="50px"
+      <Box
+        sx={{
+          p: { xs: "15px", sm: "50px", md: "50px", lg: "50px" },
+          width: "90%",
+          backgroundColor: "white",
+          mt: "50px",
+          borderRadius: "40px",
+          border: "3px solid #2d8046",
+        }}
       >
-        <Grid item xs={10} md={2}>
-          <Card>
-            <CardMedia
-              sx={{ width: "100%" }}
-              size="10rem"
-              component={AiOutlineMobile}
-            />
-            <CardContent>
+        <Grid container spacing={10}>
+          <Grid item xs={12} lg={3}>
+            <Box sx={{ width: "100%" }}>
               <Typography
+                sx={{
+                  fontSize: { xs: "1em", sm: "2em", md: "2em" },
+                  mb: "40px",
+                }}
+                letterSpacing="0.1rem"
                 fontWeight="700"
-                fontFamily='"Mulish", sans-serif'
-                textAlign="center"
+                fontFamily="poppins"
               >
-                App Aid
+                Jump start your career at Digital Tectonics LLC!
               </Typography>
-              <Typography fontFamily='"Mulish", sans-serif' textAlign="center">
-                Whether you're a seasoned developer or gearing up to submit your
-                first app, everyone can use a second review and prevent a
-                rejection.
+              <Typography fontFamily='"Mulish", sans-serif'>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
+                vitae ipsum sit amet risus semper consectetur sit amet non
+                augue. Aenean commodo, neque ac mattis mollis, justo odio mollis
+                massa, nec aliquam erat justo sit amet arcu. Suspendisse quis
+                consequat arcu. Curabitur a dui eget massa maximus egestas.
               </Typography>
-            </CardContent>
-          </Card>
-        </Grid>
-        <Grid item xs={10} md={2}>
-          <Card>
-            <CardMedia
-              sx={{ width: "100%" }}
-              size="10rem"
-              component={AiOutlineMobile}
-            />
-            <CardContent>
-              <Typography
-                fontWeight="700"
-                fontFamily='"Mulish", sans-serif'
-                textAlign="center"
-              >
-                App Aid
-              </Typography>
-              <Typography fontFamily='"Mulish", sans-serif' textAlign="center">
-                Whether you're a seasoned developer or gearing up to submit your
-                first app, everyone can use a second review and prevent a
-                rejection.
-              </Typography>
-            </CardContent>
-          </Card>
-        </Grid>
-        <Grid item xs={10} md={2}>
-          <Card>
-            <CardMedia
-              sx={{ width: "100%" }}
-              size="10rem"
-              component={AiOutlineMobile}
-            />
-            <CardContent>
-              <Typography
-                fontWeight="700"
-                fontFamily='"Mulish", sans-serif'
-                textAlign="center"
-              >
-                App Aid
-              </Typography>
-              <Typography fontFamily='"Mulish", sans-serif' textAlign="center">
-                Whether you're a seasoned developer or gearing up to submit your
-                first app, everyone can use a second review and prevent a
-                rejection.
-              </Typography>
-            </CardContent>
-          </Card>
-        </Grid>
-      </Grid>
-      <Box sx={{ width: "100%", mt: "100px" }}>
-        <Typography
-          sx={{
-            textDecoration: "underline",
-            fontSize: { xs: "2em", sm: "3em", md: "3em" },
-          }}
-          letterSpacing="0.1rem"
-          color="white"
-          fontWeight="700"
-          textAlign="center"
-          fontFamily="poppins"
-        >
-          Operations
-        </Typography>
-        <Grid
-          container
-          justifyContent="center"
-          alignItems="center"
-          spacing="20px"
-          pt="50px"
-        >
-          <Grid item xs={10} md={2}>
-            <Card>
-              <CardMedia
-                sx={{ width: "100%" }}
-                size="10rem"
-                component={AiOutlineMobile}
-              />
-              <CardContent>
-                <Typography
-                  fontWeight="700"
-                  fontFamily='"Mulish", sans-serif'
-                  textAlign="center"
-                >
-                  App Aid
-                </Typography>
-                <Typography
-                  fontFamily='"Mulish", sans-serif'
-                  textAlign="center"
-                >
-                  Whether you're a seasoned developer or gearing up to submit
-                  your first app, everyone can use a second review and prevent a
-                  rejection.
-                </Typography>
-              </CardContent>
-            </Card>
+            </Box>
           </Grid>
-          <Grid item xs={10} md={2}>
-            <Card>
-              <CardMedia
-                sx={{ width: "100%" }}
-                size="10rem"
-                component={AiOutlineMobile}
-              />
-              <CardContent>
-                <Typography
-                  fontWeight="700"
-                  fontFamily='"Mulish", sans-serif'
-                  textAlign="center"
+          <Grid item xs={12} lg={9}>
+            <Grid
+              container
+              justifyContent="center"
+              alignItems="center"
+              spacing="20px"
+            >
+              <Grid item xs={12} md={6} lg={3}>
+                <Paper
+                  elevation={4}
+                  sx={{
+                    borderRadius: "30px",
+                    padding: "50px",
+                    display: "flex",
+                    justifyContent: "center",
+                    flexDirection: "column",
+                  }}
                 >
-                  App Aid
-                </Typography>
-                <Typography
-                  fontFamily='"Mulish", sans-serif'
-                  textAlign="center"
+                  <Typography
+                    fontWeight="700"
+                    fontFamily='"Mulish", sans-serif'
+                    textAlign="center"
+                  >
+                    Diversity & Inclusion
+                  </Typography>
+                  <Typography
+                    fontFamily='"Mulish", sans-serif'
+                    textAlign="center"
+                  >
+                    Whether you're a seasoned developer or gearing up to submit
+                    your first app, everyone can use a second review and prevent
+                    a rejection.
+                  </Typography>
+                  <Button sx={{ mt: "5px" }}>More Inclusion</Button>
+                </Paper>
+              </Grid>
+              <Grid item xs={12} md={6} lg={3}>
+                <Paper
+                  elevation={4}
+                  sx={{
+                    borderRadius: "30px",
+                    padding: "50px",
+                    display: "flex",
+                    justifyContent: "center",
+                    flexDirection: "column",
+                  }}
                 >
-                  Whether you're a seasoned developer or gearing up to submit
-                  your first app, everyone can use a second review and prevent a
-                  rejection.
-                </Typography>
-              </CardContent>
-            </Card>
-          </Grid>
-          <Grid item xs={10} md={2}>
-            <Card>
-              <CardMedia
-                sx={{ width: "100%" }}
-                size="10rem"
-                component={AiOutlineMobile}
-              />
-              <CardContent>
-                <Typography
-                  fontWeight="700"
-                  fontFamily='"Mulish", sans-serif'
-                  textAlign="center"
+                  <Typography
+                    fontWeight="700"
+                    fontFamily='"Mulish", sans-serif'
+                    textAlign="center"
+                  >
+                    Benefits
+                  </Typography>
+                  <Typography
+                    fontFamily='"Mulish", sans-serif'
+                    textAlign="center"
+                  >
+                    Whether you're a seasoned developer or gearing up to submit
+                    your first app, everyone can use a second review and prevent
+                    a rejection.
+                  </Typography>
+                  <Button sx={{ mt: "5px" }}>View Benefits</Button>
+                </Paper>
+              </Grid>
+              <Grid item xs={12} md={6} lg={3}>
+                <Paper
+                  elevation={4}
+                  sx={{
+                    borderRadius: "30px",
+                    padding: "50px",
+                    display: "flex",
+                    justifyContent: "center",
+                    flexDirection: "column",
+                  }}
                 >
-                  App Aid
-                </Typography>
-                <Typography
-                  fontFamily='"Mulish", sans-serif'
-                  textAlign="center"
+                  <Typography
+                    fontWeight="700"
+                    fontFamily='"Mulish", sans-serif'
+                    textAlign="center"
+                  >
+                    Open Positions
+                  </Typography>
+                  <Typography
+                    fontFamily='"Mulish", sans-serif'
+                    textAlign="center"
+                  >
+                    Whether you're a seasoned developer or gearing up to submit
+                    your first app, everyone can use a second review and prevent
+                    a rejection.
+                  </Typography>
+                  <Button sx={{ mt: "5px" }}>See Positions</Button>
+                </Paper>
+              </Grid>
+              <Grid item xs={12} md={6} lg={3}>
+                <Paper
+                  elevation={4}
+                  sx={{
+                    borderRadius: "30px",
+                    padding: "50px",
+                    display: "flex",
+                    justifyContent: "center",
+                    flexDirection: "column",
+                  }}
                 >
-                  Whether you're a seasoned developer or gearing up to submit
-                  your first app, everyone can use a second review and prevent a
-                  rejection.
-                </Typography>
-              </CardContent>
-            </Card>
+                  <Typography
+                    fontWeight="700"
+                    fontFamily='"Mulish", sans-serif'
+                    textAlign="center"
+                  >
+                    Hiring Process
+                  </Typography>
+                  <Typography
+                    fontFamily='"Mulish", sans-serif'
+                    textAlign="center"
+                  >
+                    Whether you're a seasoned developer or gearing up to submit
+                    your first app, everyone can use a second review and prevent
+                    a rejection.
+                  </Typography>
+                  <Button sx={{ mt: "5px" }}>Learn More</Button>
+                </Paper>
+              </Grid>
+            </Grid>
           </Grid>
         </Grid>
       </Box>

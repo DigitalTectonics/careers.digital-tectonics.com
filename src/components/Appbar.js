@@ -32,6 +32,9 @@ export default function Appbar() {
         <Toolbar disableGutters>
           <Avatar
             sx={{
+              backgroundColor: "white",
+              padding: "10px",
+              borderRadius: "100%",
               display: { xs: "none", md: "flex" },
               mr: 1,
               width: "55px",
