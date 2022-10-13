@@ -22,7 +22,7 @@ export default function Careers() {
           width: "90%",
           backgroundColor: "white",
           mt: "50px",
-          borderRadius: "40px",
+          borderRadius: { xs: "20px", md: "30px", lg: "40px" },
           border: "3px solid #2d8046",
         }}
       >

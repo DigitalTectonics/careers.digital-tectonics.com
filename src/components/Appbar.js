@@ -111,7 +111,13 @@ export default function Appbar() {
             </Menu>
           </Box>
           <Avatar
-            sx={{ display: { xs: "flex", md: "none" }, mr: 1 }}
+            sx={{
+              display: { xs: "flex", md: "none" },
+              mr: 1,
+              backgroundColor: "white",
+              borderRadius: "100%",
+              padding: "7px",
+            }}
             src={logo}
             alt="digital tectonics logo"
             variant="square"
