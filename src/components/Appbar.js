@@ -57,6 +57,9 @@ export default function Appbar() {
               letterSpacing: ".3rem",
               color: "white",
               textDecoration: "none",
+              "&:hover": {
+                color: "#216C38",
+              },
             }}
           >
             Digtal Tectonics
@@ -102,6 +105,11 @@ export default function Appbar() {
                   target={index === 0 ? "_blank" : null}
                   key={page}
                   onClick={handleCloseNavMenu}
+                  sx={{
+                    "&:hover": {
+                      color: "#216C38",
+                    },
+                  }}
                 >
                   <Typography fontFamily="poppins" textAlign="center">
                     {page}
@@ -136,6 +144,9 @@ export default function Appbar() {
               letterSpacing: ".1rem",
               color: "white",
               textDecoration: "none",
+              "&:hover": {
+                color: "#216C38",
+              },
             }}
           >
             Digtal Tectonics
@@ -151,7 +162,15 @@ export default function Appbar() {
               <Button
                 key={page}
                 onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: "white", display: "block", ml: 3 }}
+                sx={{
+                  my: 2,
+                  color: "white",
+                  display: "block",
+                  ml: 3,
+                  "&:hover": {
+                    color: "#216C38",
+                  },
+                }}
                 component="a"
                 target={index === 0 ? "_blank" : null}
                 href={index === 0 ? `${links[index]}` : `#${links[index]}`}
