@@ -31,8 +31,8 @@ export default function Careers() {
             <Box sx={{ width: "100%" }}>
               <Typography
                 sx={{
-                  fontSize: { xs: "1em", sm: "2em", md: "2em" },
-                  mb: "40px",
+                  fontSize: { xs: "1.5em", sm: "2.5em", md: "2.5em" },
+                  mb: "30px",
                 }}
                 letterSpacing="0.1rem"
                 fontWeight="700"
