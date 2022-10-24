@@ -15,7 +15,7 @@ import logo from "../../assets/logo.png";
 const pages = ["Home", "Careers", "About Us", "Contact Us"];
 const links = ["https://digital-tectonics.com", "careers", "about", "contact"];
 
-export default function Appbar() {
+export default function Appbar({ children }) {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
 
   const handleOpenNavMenu = (event) => {
@@ -110,6 +110,7 @@ export default function Appbar() {
                   </Typography>
                 </MenuItem>
               ))}
+              <MenuItem>{children}</MenuItem>
             </Menu>
           </Box>
           <Avatar
@@ -151,9 +152,9 @@ export default function Appbar() {
                 key={page}
                 onClick={handleCloseNavMenu}
                 sx={{
-                  my: 2,
+                  my: 1,
                   display: "block",
-                  ml: 3,
+                  ml: 1,
                   color: "primary.text",
                 }}
                 component="a"
@@ -165,6 +166,16 @@ export default function Appbar() {
                 </Typography>
               </Button>
             ))}
+            <Button
+              sx={{
+                my: 1,
+                display: "block",
+                ml: 1,
+                color: "primary.text",
+              }}
+            >
+              {children}
+            </Button>
           </Box>
         </Toolbar>
       </Container>

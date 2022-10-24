@@ -23,7 +23,6 @@ footer h5 {
   font-size: 26px;
   line-height: 32px;
   font-weight: 600;
-  color: #0e0f10;
   font-family: "Mulish";
   margin-bottom: 31px;
 }
@@ -38,7 +37,6 @@ footer .footer-nav li a {
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  color: #000;
   font-family: "poppins";
 }
 
@@ -61,11 +59,9 @@ footer .footer-contact li {
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  color: #000;
   font-family: "poppins";
 }
 footer .footer-contact li a {
-  color: #000;
   margin-bottom: 0;
 }
 footer .link-container {

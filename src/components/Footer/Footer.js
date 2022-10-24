@@ -56,6 +56,7 @@ export default function Footer(props) {
       style={{
         borderTop: "10px solid #2d8046",
         backgroundColor: `${props.mode.primary.main}`,
+        color: `${props.mode.primary.text}`,
       }}
     >
       <div className="container">
