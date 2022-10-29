@@ -12,7 +12,11 @@ export default function Card(props) {
           backgroundColor: "primary.main",
         }}
       >
-        <Grid container spacing={4} justifyContent="center">
+        <Grid
+          container
+          spacing={{ xs: 2, lg: 3, xl: 4 }}
+          justifyContent="center"
+        >
           <Grid item xs={12} lg={6}>
             <Avatar
               src={image}
