@@ -97,4 +97,7 @@ export const PositonsButton = styled(Button)(({ theme }) => ({
   padding: theme.spacing(3),
   width: "234px",
   marginTop: theme.spacing(1),
+  "&:hover": {
+    backgroundColor: theme.palette.primary.main,
+  },
 }));

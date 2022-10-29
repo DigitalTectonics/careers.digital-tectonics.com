@@ -8,3 +8,12 @@ export const CardContainer = styled(Paper)(({ theme }) => ({
   justifyContent: "center",
   flexDirection: "column",
 }));
+
+export const CardContent = styled(Paper)(({ theme }) => ({
+  borderRadius: "30px",
+  padding: theme.spacing(4),
+  display: "flex",
+  justifyContent: "center",
+  flexDirection: "column",
+  height: "100%",
+}));
