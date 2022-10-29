@@ -1,18 +1,14 @@
 import React from "react";
-import { Typography, Button, Paper } from "@mui/material";
+import { Typography, Button } from "@mui/material";
+import { CardContainer } from "./styles";
 
 export default function Card(props) {
   const { header, description, button } = props;
   return (
     <React.Fragment>
-      <Paper
+      <CardContainer
         elevation={4}
         sx={{
-          borderRadius: "30px",
-          padding: "50px",
-          display: "flex",
-          justifyContent: "center",
-          flexDirection: "column",
           backgroundColor: "primary.main",
         }}
       >
@@ -29,7 +25,7 @@ export default function Card(props) {
         <Button color="success" sx={{ mt: "5px" }}>
           {button}
         </Button>
-      </Paper>
+      </CardContainer>
     </React.Fragment>
   );
 }

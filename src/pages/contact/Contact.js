@@ -1,28 +1,21 @@
 import React from "react";
-import TextField from "@mui/material/TextField";
+import { Box } from "@mui/material";
 import {
-  Box,
-  Grid,
-  Button,
-  Typography,
-  Paper,
-  Checkbox,
-  FormControlLabel,
-} from "@mui/material";
+  ContactContainer,
+  FormContainer,
+  HeaderText,
+  SubContactContainer,
+} from "./styles";
+import Form from "../../components/Form/Form";
 
 export default function Contact(props) {
   const [email, setEmail] = React.useState("");
   const [message, setMessage] = React.useState("");
   const [newsletter, setNewsletter] = React.useState(false);
   return (
-    <Box
+    <ContactContainer
       id="contact"
       sx={{
-        width: "100%",
-        scrollMarginTop: "15em",
-        height: "60vh",
-        pb: "100px",
-        position: "relative",
         backgroundColor: "primary.landing",
       }}
     >
@@ -54,23 +47,8 @@ export default function Contact(props) {
           </svg>
         </Box>
       </Box>
-      <Box
-        sx={{
-          width: "100%",
-          height: "100%",
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          flexDirection: "column",
-        }}
-      >
-        <Typography
-          sx={{
-            textDecoration: "underline",
-            fontSize: { xs: "2em", sm: "3em", md: "3em" },
-            zIndex: "100",
-            mt: "-100px",
-          }}
+      <SubContactContainer>
+        <HeaderText
           letterSpacing="0.1rem"
           color="primary.text"
           fontWeight="700"
@@ -78,82 +56,23 @@ export default function Contact(props) {
           fontFamily="poppins"
         >
           Any Questions? Reach Out to Us!
-        </Typography>
-        <Paper
+        </HeaderText>
+        <FormContainer
           sx={{
-            padding: "40px",
-            margin: "30px",
             backgroundColor: "primary.main",
-            zIndex: "100",
-            border: "5px solid #E6B53B",
           }}
           elevation={8}
         >
-          <form
-            action={process.env.REACT_APP_API_KEY}
-            class="pageclip-form"
-            method="post"
-          >
-            <Grid container justifyContent="center" spacing="20">
-              <Grid item xs="12">
-                <TextField
-                  sx={{ width: "100%" }}
-                  name="email"
-                  type="email"
-                  required
-                  id="outlined-required"
-                  label="Email"
-                  onChange={(e) => setEmail(e.target.value)}
-                  value={email}
-                />
-              </Grid>
-              <Grid item xs="12">
-                <TextField
-                  sx={{ width: "100%" }}
-                  name="message"
-                  type="text"
-                  required
-                  id="outlined-required"
-                  multiline
-                  rows={5}
-                  label="Message"
-                  onChange={(e) => setMessage(e.target.value)}
-                  value={message}
-                />
-              </Grid>
-              <Grid item xs="12">
-                <FormControlLabel
-                  control={
-                    <Checkbox
-                      name="newsletter"
-                      value={newsletter}
-                      onChange={(e) => setNewsletter(!newsletter)}
-                      sx={{
-                        "& .MuiSvgIcon-root": {
-                          fontSize: 28,
-                          color: "primary.text",
-                        },
-                      }}
-                    />
-                  }
-                  label="Would you like to sign up for our Newsletter?"
-                />
-              </Grid>
-              <Grid item xs="12">
-                <Button
-                  sx={{ width: "100%" }}
-                  className="pageclip-form__submit"
-                  type="submit"
-                  color="success"
-                  variant="outlined"
-                >
-                  Send
-                </Button>
-              </Grid>
-            </Grid>
-          </form>
-        </Paper>
-      </Box>
-    </Box>
+          <Form
+            setEmail={setEmail}
+            email={email}
+            setMessage={setMessage}
+            message={message}
+            setNewsletter={setNewsletter}
+            newsletter={newsletter}
+          />
+        </FormContainer>
+      </SubContactContainer>
+    </ContactContainer>
   );
 }

@@ -76,7 +76,7 @@ function App() {
         <Landing mode={mode} />
         <Careers mode={mode} />
         <Contact mode={mode} />
-        <Footer mode={theme.palette} />
+        <Footer color={theme.palette} mode={mode} />
       </ThemeProvider>
     </ColorModeContext.Provider>
   );

@@ -55,8 +55,8 @@ export default function Footer(props) {
     <footer
       style={{
         borderTop: "10px solid #2d8046",
-        backgroundColor: `${props.mode.primary.main}`,
-        color: `${props.mode.primary.text}`,
+        backgroundColor: `${props.color.primary.main}`,
+        color: `${props.color.primary.text}`,
       }}
     >
       <div className="container">
@@ -141,7 +141,11 @@ export default function Footer(props) {
             </div>
           </div>
           <div className="col-md-3">
-            <div className="footer-nav">
+            <div
+              className={
+                props.mode === "dark" ? "footer-nav-dark" : "footer-nav-light"
+              }
+            >
               <h5>Services</h5>
               <ul className="footer-links">
                 <li>
@@ -163,7 +167,11 @@ export default function Footer(props) {
             </div>
           </div>
           <div className="col-md-3">
-            <div className="footer-nav">
+            <div
+              className={
+                props.mode === "dark" ? "footer-nav-dark" : "footer-nav-light"
+              }
+            >
               <h5>Company</h5>
               <ul className="footer-links">
                 <li>
