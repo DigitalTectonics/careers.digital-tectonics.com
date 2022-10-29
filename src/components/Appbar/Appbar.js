@@ -124,6 +124,9 @@ export default function Appbar({ children }) {
                   display: "block",
                   ml: 1,
                   color: "primary.text",
+                  "&:hover": {
+                    color: "white",
+                  },
                 }}
                 component="a"
                 target={index === 0 ? "_blank" : null}
