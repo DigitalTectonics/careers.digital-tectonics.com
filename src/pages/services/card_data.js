@@ -1,7 +1,7 @@
-import pexels1 from "../../assets/pexels1.jpg";
-import pexels2 from "../../assets/pexels2.jpg";
-import shutterstock2 from "../../assets/shutterstock2.jpg";
-import shutterstock3 from "../../assets/shutterstock3.jpg";
+import pexels1 from "../../assets/pexels1.webp";
+import pexels2 from "../../assets/pexels2.webp";
+import shutterstock2 from "../../assets/shutterstock2.webp";
+import shutterstock3 from "../../assets/shutterstock3.webp";
 
 export const cards = [
   {

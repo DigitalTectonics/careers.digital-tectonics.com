@@ -1,6 +1,6 @@
 import { styled } from "@mui/system";
 import { Button, Box, Paper } from "@mui/material";
-import stockPhoto from "../../assets/shutterstock1.jpg";
+import stockPhoto from "../../assets/shutterstock1.webp";
 
 export const LandingContainer = styled(Box)(({ theme }) => ({
   height: "100vh",

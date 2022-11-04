@@ -50,7 +50,7 @@ export default function Appbar({ children }) {
             component="a"
             href="/"
           >
-            Digtal Tectonics
+            Digital Tectonics
           </DigitalDesktop>
           <MenuContainer>
             <IconButton
