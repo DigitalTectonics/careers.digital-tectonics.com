@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.036bef6f.css",
-    "main.js": "/static/js/main.8594552a.js",
-    "static/media/shutterstock2.jpg": "/static/media/shutterstock2.15bae1d95049407bda9a.jpg",
-    "static/media/shutterstock1.jpg": "/static/media/shutterstock1.1badff4be20b4ad90394.jpg",
-    "static/media/shutterstock3.jpg": "/static/media/shutterstock3.fabc34f36dd671ca68cc.jpg",
-    "static/media/pexels1.jpg": "/static/media/pexels1.7265d4d3b52968a028a0.jpg",
-    "static/media/pexels2.jpg": "/static/media/pexels2.488a2238c739f87d0512.jpg",
+    "main.css": "/static/css/main.df6d847c.css",
+    "main.js": "/static/js/main.f7283bb1.js",
+    "static/media/pexels1.webp": "/static/media/pexels1.f8d8c6c9dab7f5e412a9.webp",
+    "static/media/pexels2.webp": "/static/media/pexels2.c560e7ddf87e64fa6cf2.webp",
+    "static/media/shutterstock1.webp": "/static/media/shutterstock1.5eca307cac60bdbcf93f.webp",
+    "static/media/shutterstock3.webp": "/static/media/shutterstock3.5e30d0f989b8000a909e.webp",
+    "static/media/shutterstock2.webp": "/static/media/shutterstock2.463d2aba647cc46afb7b.webp",
     "static/media/logo.png": "/static/media/logo.ce32b8b7e12d293b473b.png",
     "index.html": "/index.html",
-    "main.036bef6f.css.map": "/static/css/main.036bef6f.css.map",
-    "main.8594552a.js.map": "/static/js/main.8594552a.js.map"
+    "main.df6d847c.css.map": "/static/css/main.df6d847c.css.map",
+    "main.f7283bb1.js.map": "/static/js/main.f7283bb1.js.map"
   },
   "entrypoints": [
-    "static/css/main.036bef6f.css",
-    "static/js/main.8594552a.js"
+    "static/css/main.df6d847c.css",
+    "static/js/main.f7283bb1.js"
   ]
 }
