@@ -37,6 +37,9 @@ export const DigitalDesktop = styled(Typography)(({ theme }) => ({
   fontWeight: 700,
   letterSpacing: ".3rem",
   textDecoration: "none",
+  "&:hover": {
+    color: "white",
+  },
 }));
 
 export const DigitalMobile = styled(Typography)(({ theme }) => ({

@@ -8,7 +8,7 @@ export const cards = [
     image: pexels2,
     header: "Diversity & Inclusion",
     description:
-      "We believe that different experiences, backgrounds and perspectives make us a stronger compnay.",
+      "We believe that different experiences, backgrounds and perspectives make us a stronger company.",
     button: "More Inclusion",
   },
   {

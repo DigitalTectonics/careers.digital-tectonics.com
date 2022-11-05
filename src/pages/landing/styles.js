@@ -23,11 +23,19 @@ export const LandingSub = styled(Paper)(({ theme, mode }) => ({
     width: "95vw",
     height: "90vh",
     background: "initial",
+    display: "flex",
+    justifyContent: "flex-start",
+    alignItems: "center",
+    flexDirection: "column",
   },
   [theme.breakpoints.up("lg")]: {
     marginLeft: theme.spacing(4),
     width: "45vw",
     height: "60vh",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    flexDirection: "column",
     background:
       mode === "dark" ? "rgba(43,74,68,0.5)" : "rgba(97,202,129, 0.5)",
   },
@@ -38,10 +46,6 @@ export const LandingSub = styled(Paper)(({ theme, mode }) => ({
   backdropFilter: "blur( 12px )",
   WebkitBackdropFilter: "blur( 12px )",
   borderRadius: "10px",
-  display: "flex",
-  justifyContent: "center",
-  alignItems: "center",
-  flexDirection: "column",
   paddingLeft: theme.spacing(2),
   paddingRight: theme.spacing(2),
   textAlign: "center",
@@ -51,31 +55,44 @@ export const LandingSub = styled(Paper)(({ theme, mode }) => ({
 export const LandingMobile = styled(Box)(({ theme }) => ({
   [theme.breakpoints.up("xs")]: {
     display: "block",
+    height: "35%",
+    marginTop: "-8px",
+  },
+  [theme.breakpoints.up("sm")]: {
+    display: "block",
+    height: "50%",
+    marginTop: "-20px",
   },
   [theme.breakpoints.up("lg")]: {
     display: "none",
   },
   backgroundImage: `url(${stockPhoto})`,
   backgroundSize: "cover",
-  height: "30vh",
-  width: "100%",
-  borderRadius: "30px",
-  marginBottom: theme.spacing(3),
-  border: "5px solid",
+  backgroundRepeat: "no-repeat",
+  width: "100vw",
 }));
 
 export const SubHero = styled(Paper)(({ theme }) => ({
   [theme.breakpoints.up("xs")]: {
     backgroundColor: "rgba(43,74,68,0.9)",
-    border: "10px solid",
+    border: "5px solid",
+    width: "100vw",
+    display: "flex",
+    height: "60%",
+    flexDirection: "column",
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  [theme.breakpoints.up("sm")]: {
+    height: "50%",
   },
   [theme.breakpoints.up("lg")]: {
     backgroundColor: "initial",
     border: "0px",
+    width: "100%",
   },
   padding: theme.spacing(3),
   borderColor: "primary.main",
-  borderRadius: "30px",
 }));
 
 export const IconsContainer = styled(Box)(({ theme }) => ({
@@ -92,7 +109,7 @@ export const Icon = styled(Box)(({ theme }) => ({
 }));
 
 export const PositonsButton = styled(Button)(({ theme }) => ({
-  backgroundColor: "#E6C574",
+  backgroundColor: theme.palette.primary.main,
   borderRadius: "50px",
   padding: theme.spacing(3),
   width: "234px",

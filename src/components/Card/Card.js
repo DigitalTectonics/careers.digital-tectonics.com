@@ -27,7 +27,12 @@ export default function Card(props) {
           <Grid item xs={12} lg={6}>
             <CardContent
               elevation={2}
-              sx={{ backgroundColor: "primary.landing" }}
+              sx={{
+                backgroundColor: "primary.landing",
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+              }}
             >
               <Typography
                 fontWeight="700"
@@ -39,8 +44,17 @@ export default function Card(props) {
               <Typography fontFamily='"Mulish", sans-serif' textAlign="center">
                 {description}
               </Typography>
-              <Button color="success" sx={{ mt: "5px" }}>
-                {button}
+              <Button
+                variant="contained"
+                sx={{
+                  mt: "30px",
+                  backgroundColor: "primary.main",
+                  width: "200px",
+                }}
+              >
+                <Typography className="underline" variant="body2">
+                  {button}
+                </Typography>
               </Button>
             </CardContent>
           </Grid>

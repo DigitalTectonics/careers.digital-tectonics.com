@@ -49,6 +49,7 @@ export default function Appbar({ children }) {
             noWrap
             component="a"
             href="/"
+            className="underline"
           >
             Digital Tectonics
           </DigitalDesktop>
@@ -84,6 +85,7 @@ export default function Appbar({ children }) {
               {pages.map((page, index) => (
                 <MenuItem
                   component="a"
+                  className="underline"
                   href={index === 0 ? `${links[index]}` : `#${links[index]}`}
                   target={index === 0 ? "_blank" : null}
                   key={page}
@@ -92,7 +94,7 @@ export default function Appbar({ children }) {
                     color: "primary.text",
                   }}
                 >
-                  <Typography fontFamily="poppins" textAlign="center">
+                  <Typography fontFamily="Mulish" textAlign="center">
                     {page}
                   </Typography>
                 </MenuItem>
@@ -118,6 +120,7 @@ export default function Appbar({ children }) {
             {pages.map((page, index) => (
               <Button
                 key={page}
+                className="underline"
                 onClick={handleCloseNavMenu}
                 sx={{
                   my: 1,
@@ -132,7 +135,7 @@ export default function Appbar({ children }) {
                 target={index === 0 ? "_blank" : null}
                 href={index === 0 ? `${links[index]}` : `#${links[index]}`}
               >
-                <Typography fontFamily="poppins" textAlign="center">
+                <Typography fontFamily="Mulish" textAlign="center">
                   {page}
                 </Typography>
               </Button>

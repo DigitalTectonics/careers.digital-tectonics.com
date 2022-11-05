@@ -38,7 +38,7 @@ export default function Landing(props) {
                 fontSize: { xs: "1.5em", sm: "2.5em", md: "1.9em", lg: "2em" },
               }}
             >
-              Work when & where you want
+              Work When & Where You Want
             </Typography>
             <Typography
               alignText="center"
@@ -65,7 +65,7 @@ export default function Landing(props) {
               </Box>
               <Box>
                 <PositonsButton variant="contained">
-                  Open Positions
+                  <Typography className="underline">Open Positions</Typography>
                 </PositonsButton>
               </Box>
             </IconsContainer>
