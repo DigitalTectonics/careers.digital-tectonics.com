@@ -102,9 +102,10 @@ export default function Footer(props) {
                     </div>
                   </div>
                 </li>
+                <br></br>
                 <li>2016-2022 Digital Tectonics LLC ALL RIGHTS RESERVED</li>
               </ul>
-              <div>Don't miss our updates</div>
+              <div>Don't miss our updates!</div>
               <br />
               <ul className="social-icons">
                 <li>

@@ -42,7 +42,7 @@ footer .footer-nav-dark li a {
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  font-family: "poppins";
+  font-family: "roboto";
   color: white;
 }
 
@@ -50,7 +50,7 @@ footer .footer-nav-light li a {
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  font-family: "poppins";
+  font-family: "roboto";
 }
 
 footer .footer-contact {
@@ -72,7 +72,7 @@ footer .footer-contact li {
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  font-family: "poppins";
+  font-family: "roboto";
 }
 footer .footer-contact li a {
   margin-bottom: 0;
