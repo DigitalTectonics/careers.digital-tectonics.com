@@ -15,21 +15,21 @@ export const cards = [
     image: pexels1,
     header: "Benefits",
     description:
-      "Our unique work schedule and location flexibility lets you work when and where you want.",
+      "Our unique work schedule and location flexibility lets you work when and where you want. Most of our team works part-time for 4 – 10 hours a week.",
     button: "View Benefits",
   },
   {
     image: shutterstock3,
     header: "Open Positions",
     description:
-      "Whether you're a seasoned developer or gearing up to submit your first app, everyone can use a second review and prevent rejection.",
+      "We have positions for all levels, whether you are just starting out or are a seasoned developer.",
     button: "See Positions",
   },
   {
     image: shutterstock2,
     header: "Hiring Process",
     description:
-      "Whether you're a seasoned developer or gearing up to submit your first app, everyone can use a second review and prevent rejection.",
+      "We keep the hiring process simple. Start by emailing us a copy of your resume and portfolio if you have one.",
     button: "Learn More",
   },
 ];
