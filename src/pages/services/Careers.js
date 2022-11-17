@@ -24,7 +24,7 @@ export default function Careers() {
           color="primary.text"
           fontWeight="700"
           textAlign="center"
-          fontFamily="poppins"
+          fontFamily='"DM Sans", sans-serif'
         >
           Digital Tectonics, LLC
         </HeaderText>

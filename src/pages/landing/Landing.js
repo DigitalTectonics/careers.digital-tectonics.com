@@ -48,8 +48,7 @@ export default function Landing(props) {
                 fontSize: { xs: "1.2em", sm: "2em", md: "1.4em", lg: "1.5em" },
               }}
             >
-              Digital Tectonics, LLC offers part time development work allowing
-              you to build your resume while keeping your day job.
+              Digital Tectonics, LLC offers part-time development work allowing you to build your resume while keeping your day job.
             </Typography>
             <IconsContainer>
               <Box sx={{ display: "flex", gap: "15px", mt: "20px" }}>

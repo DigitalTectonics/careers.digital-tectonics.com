@@ -53,7 +53,7 @@ export default function Contact(props) {
           color="primary.text"
           fontWeight="700"
           textAlign="center"
-          fontFamily="poppins"
+          fontFamily='"DM Sans", sans-serif'
         >
           Any Questions? Reach Out to Us!
         </HeaderText>

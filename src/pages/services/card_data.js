@@ -8,7 +8,7 @@ export const cards = [
     image: pexels2,
     header: "Diversity & Inclusion",
     description:
-      "We believe that different experiences, backgrounds and perspectives make us a stronger company.",
+      "We believe that different experiences, backgrounds, and perspectives make us a stronger company.",
     button: "More Inclusion",
   },
   {
@@ -22,14 +22,14 @@ export const cards = [
     image: shutterstock3,
     header: "Open Positions",
     description:
-      "Whether you're a seasoned developer or gearing up to submit your first app, everyone can use a second review and prevent a rejection.",
+      "Whether you're a seasoned developer or gearing up to submit your first app, everyone can use a second review and prevent rejection.",
     button: "See Positions",
   },
   {
     image: shutterstock2,
     header: "Hiring Process",
     description:
-      "Whether you're a seasoned developer or gearing up to submit your first app, everyone can use a second review and prevent a rejection.",
+      "Whether you're a seasoned developer or gearing up to submit your first app, everyone can use a second review and prevent rejection.",
     button: "Learn More",
   },
 ];
