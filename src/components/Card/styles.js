@@ -7,6 +7,7 @@ export const CardContainer = styled(Paper)(({ theme }) => ({
   display: "flex",
   justifyContent: "center",
   flexDirection: "column",
+  height: "100%",
 }));
 
 export const CardContent = styled(Paper)(({ theme }) => ({
@@ -15,5 +16,5 @@ export const CardContent = styled(Paper)(({ theme }) => ({
   display: "flex",
   justifyContent: "center",
   flexDirection: "column",
-  height: "100%",
+  height: "100%"
 }));
