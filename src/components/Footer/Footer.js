@@ -54,7 +54,7 @@ export default function Footer(props) {
   return (
     <footer
       style={{
-        borderTop: "10px solid #2d8046",
+        borderTop: "10px solid #226B38",
         backgroundColor: `${props.color.primary.main}`,
         color: `${props.color.primary.text}`,
       }}
