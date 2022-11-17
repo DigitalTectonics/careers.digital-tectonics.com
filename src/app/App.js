@@ -9,6 +9,7 @@ import Box from "@mui/material/Box";
 import Brightness4Icon from "@mui/icons-material/Brightness4";
 import Brightness7Icon from "@mui/icons-material/Brightness7";
 import useMediaQuery from "@mui/material/useMediaQuery";
+import { Typography } from "@mui/material";
 
 const ColorModeContext = React.createContext({ toggleColorMode: () => {} });
 
@@ -26,12 +27,14 @@ function SwitchMode() {
       }}
       onClick={colorMode.toggleColorMode}
     >
+      <Typography fontFamily="Mulish" textAlign="center">
       {theme.palette.mode === "dark" ? "Dark" : "Light"} Green mode
       {theme.palette.mode === "dark" ? (
         <Brightness7Icon sx={{ ml: "5px" }} />
       ) : (
         <Brightness4Icon sx={{ ml: "5px" }} />
       )}
+      </Typography>
     </Box>
   );
 }
