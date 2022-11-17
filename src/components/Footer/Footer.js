@@ -1,6 +1,6 @@
 import React from "react";
 import "./footer.css";
-import logo from "../assets/logo.png";
+import logo from "../../assets/logo.png";
 import {
   BsTwitch,
   BsDiscord,
@@ -12,7 +12,7 @@ import {
 
 import { AiOutlineLink } from "react-icons/ai";
 
-export default function Footer() {
+export default function Footer(props) {
   function fallbackCopyTextToClipboard(text) {
     var textArea = document.createElement("textarea");
     textArea.value = text;
@@ -52,7 +52,13 @@ export default function Footer() {
     );
   };
   return (
-    <footer style={{ borderTop: "10px solid #2d8046" }}>
+    <footer
+      style={{
+        borderTop: "10px solid #226B38",
+        backgroundColor: `${props.color.primary.main}`,
+        color: `${props.color.primary.text}`,
+      }}
+    >
       <div className="container">
         <div className="row">
           <div className="col-md-6">
@@ -64,7 +70,7 @@ export default function Footer() {
                 href="https://digital-tectonics.com"
               >
                 <img src={logo} alt="logo" />
-                <span>Digital Technotics</span>
+                <span>Digital Tectonics</span>
               </a>
               <ul className="footer-contact">
                 <li>
@@ -96,9 +102,10 @@ export default function Footer() {
                     </div>
                   </div>
                 </li>
+                <br></br>
                 <li>2016-2022 Digital Tectonics LLC ALL RIGHTS RESERVED</li>
               </ul>
-              <div>Don't miss our updates</div>
+              <div>Don't miss our updates!</div>
               <br />
               <ul className="social-icons">
                 <li>
@@ -135,7 +142,11 @@ export default function Footer() {
             </div>
           </div>
           <div className="col-md-3">
-            <div className="footer-nav">
+            <div
+              className={
+                props.mode === "dark" ? "footer-nav-dark" : "footer-nav-light"
+              }
+            >
               <h5>Services</h5>
               <ul className="footer-links">
                 <li>
@@ -157,7 +168,11 @@ export default function Footer() {
             </div>
           </div>
           <div className="col-md-3">
-            <div className="footer-nav">
+            <div
+              className={
+                props.mode === "dark" ? "footer-nav-dark" : "footer-nav-light"
+              }
+            >
               <h5>Company</h5>
               <ul className="footer-links">
                 <li>

@@ -1,21 +1,29 @@
 import React from "react";
-import AppBar from "@mui/material/AppBar";
-import Box from "@mui/material/Box";
-import Toolbar from "@mui/material/Toolbar";
-import IconButton from "@mui/material/IconButton";
-import Typography from "@mui/material/Typography";
-import Menu from "@mui/material/Menu";
 import MenuIcon from "@mui/icons-material/Menu";
-import Container from "@mui/material/Container";
-import Button from "@mui/material/Button";
-import MenuItem from "@mui/material/MenuItem";
-import { Avatar } from "@mui/material";
-import logo from "../assets/logo.png";
+import {
+  MenuItem,
+  Button,
+  Container,
+  Menu,
+  Typography,
+  IconButton,
+  Toolbar,
+  AppBar,
+} from "@mui/material";
+import logo from "../../assets/logo.png";
+import {
+  LogoDesktop,
+  DigitalDesktop,
+  MenuContainer,
+  LogoMobile,
+  DigitalMobile,
+  NavMenu,
+} from "./styles";
 
 const pages = ["Home", "Careers", "About Us", "Contact Us"];
 const links = ["https://digital-tectonics.com", "careers", "about", "contact"];
 
-export default function Appbar() {
+export default function Appbar({ children }) {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
 
   const handleOpenNavMenu = (event) => {
@@ -27,56 +35,32 @@ export default function Appbar() {
   };
 
   return (
-    <AppBar position="fixed">
+    <AppBar sx={{ backgroundColor: "primary.main" }} position="fixed">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <Avatar
-            sx={{
-              backgroundColor: "white",
-              padding: "10px",
-              borderRadius: "100%",
-              display: { xs: "none", md: "flex" },
-              mr: 1,
-              width: "55px",
-              height: "55px",
-            }}
+          <LogoDesktop
             src={logo}
             alt="digital tectonics logo"
             variant="square"
           />
-          <Typography
+          <DigitalDesktop
+            color="primary.text"
             variant="h5"
             noWrap
             component="a"
             href="/"
-            sx={{
-              mr: 2,
-              display: { xs: "none", md: "flex" },
-              fontFamily: "Mulish",
-              fontWeight: 700,
-              letterSpacing: ".3rem",
-              color: "white",
-              textDecoration: "none",
-              "&:hover": {
-                color: "#216C38",
-              },
-            }}
+            className="underline"
           >
-            Digtal Tectonics
-          </Typography>
-          <Box
-            sx={{
-              flexGrow: 1,
-              display: { xs: "flex", md: "none" },
-            }}
-          >
+            Digital Tectonics
+          </DigitalDesktop>
+          <MenuContainer>
             <IconButton
               size="large"
               aria-label="list of sections"
               aria-controls="menu-appbar"
               aria-haspopup="true"
               onClick={handleOpenNavMenu}
-              sx={{ color: "white" }}
+              sx={{ color: "primary.darkGreen" }}
             >
               <MenuIcon />
             </IconButton>
@@ -101,86 +85,72 @@ export default function Appbar() {
               {pages.map((page, index) => (
                 <MenuItem
                   component="a"
+                  className="underline"
                   href={index === 0 ? `${links[index]}` : `#${links[index]}`}
                   target={index === 0 ? "_blank" : null}
                   key={page}
                   onClick={handleCloseNavMenu}
                   sx={{
-                    "&:hover": {
-                      color: "#216C38",
-                    },
+                    color: "primary.text",
                   }}
                 >
-                  <Typography fontFamily="poppins" textAlign="center">
+                  <Typography fontFamily="Mulish" textAlign="center">
                     {page}
                   </Typography>
                 </MenuItem>
               ))}
+              <MenuItem>{children}</MenuItem>
             </Menu>
-          </Box>
-          <Avatar
-            sx={{
-              display: { xs: "flex", md: "none" },
-              mr: 1,
-              backgroundColor: "white",
-              borderRadius: "100%",
-              padding: "7px",
-            }}
+          </MenuContainer>
+          <LogoMobile
             src={logo}
             alt="digital tectonics logo"
             variant="square"
           />
-          <Typography
+          <DigitalMobile
             variant="h6"
             noWrap
             component="a"
             href=""
-            sx={{
-              mr: 2,
-              display: { xs: "flex", md: "none" },
-              flexGrow: 1,
-              fontFamily: "monospace",
-              fontWeight: 700,
-              letterSpacing: ".1rem",
-              color: "white",
-              textDecoration: "none",
-              "&:hover": {
-                color: "#216C38",
-              },
-            }}
+            color="primary.text"
           >
             Digtal Tectonics
-          </Typography>
-          <Box
-            sx={{
-              flexGrow: 1,
-              display: { xs: "none", md: "flex" },
-              justifyContent: "flex-end",
-            }}
-          >
+          </DigitalMobile>
+          <NavMenu>
             {pages.map((page, index) => (
               <Button
                 key={page}
+                className="underline"
                 onClick={handleCloseNavMenu}
                 sx={{
-                  my: 2,
-                  color: "white",
+                  my: 1,
                   display: "block",
-                  ml: 3,
+                  ml: 1,
+                  color: "primary.text",
                   "&:hover": {
-                    color: "#216C38",
+                    color: "white",
                   },
                 }}
                 component="a"
                 target={index === 0 ? "_blank" : null}
                 href={index === 0 ? `${links[index]}` : `#${links[index]}`}
               >
-                <Typography fontFamily="poppins" textAlign="center">
+                <Typography fontFamily="Mulish" textAlign="center">
                   {page}
                 </Typography>
               </Button>
             ))}
-          </Box>
+            <Button
+              sx={{
+                my: 1,
+                display: "block",
+                ml: 1,
+                color: "primary.text",
+              }}
+            >
+              {children}
+            </Button>
+          </NavMenu>
         </Toolbar>
       </Container>
     </AppBar>
