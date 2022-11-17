@@ -57,9 +57,9 @@ function App() {
         palette: {
           mode,
           primary: {
-            main: "#FFF",
-            text: "#216C38",
-            landing: "#61ca81",
+            main: "#D7FFDF",
+            text: "#396358",
+            landing: "#ACE6C0",
             ...(mode === "dark" && {
               main: "#163832",
               text: "#C7DDD1",
