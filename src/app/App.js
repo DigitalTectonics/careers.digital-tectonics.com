@@ -28,7 +28,7 @@ function SwitchMode() {
       onClick={colorMode.toggleColorMode}
     >
       <Typography fontFamily="Mulish" textAlign="center">
-      {theme.palette.mode === "dark" ? "Dark" : "Light"} Green mode
+      {theme.palette.mode === "dark" ? "Dark" : "Light"} Mode
       {theme.palette.mode === "dark" ? (
         <Brightness7Icon sx={{ ml: "5px" }} />
       ) : (
