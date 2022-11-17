@@ -70,7 +70,7 @@ export default function Footer(props) {
                 href="https://digital-tectonics.com"
               >
                 <img src={logo} alt="logo" />
-                <span>Digital Technotics</span>
+                <span>Digital Tectonics</span>
               </a>
               <ul className="footer-contact">
                 <li>
